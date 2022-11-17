@@ -44,13 +44,18 @@ hr{
     transform: translate(-50%, -50%);
     box-shadow: 0px 0px 25px 0px rgb(0, 0, 0);
 }
+
 label{
-    color: white;
-    background-color: #0000001a;
     display: flex;
     align-items: center;
-    border-radius: 5px;
     margin: 0.5rem 0;
+}
+
+.input-label{
+    color: white;
+    background-color: #0000001a;
+    height: 25px;
+    border-radius: 5px;
 }
 
 .form-control:focus {
@@ -62,6 +67,7 @@ label{
 .checkbox{
     min-height: 1rem;
     min-width: 1rem;
+    margin: 0;
     margin-right: 0.5rem;
 }
 
@@ -74,6 +80,7 @@ label{
     height: 25px;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
 button{
     padding: 10px;
     width: 100%;
@@ -83,4 +90,11 @@ button{
     border-left-color: #94bbe9;
     border-bottom-color: #eeaeca;
     border-right-color: #eeaeca;
+    transition: background-color 0.3s ease-in-out;
+
+}
+button:hover{
+    cursor: pointer;
+    background-color: #80ffca;
+    
 }
